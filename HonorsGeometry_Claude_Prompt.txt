@@ -1,0 +1,108 @@
+Build a brand new project for a scalable Honors Geometry tutorial app.
+
+Project name and location
+- This is a net new project.
+- Create the project inside a root folder named: HonorsGeometry
+
+Core objective
+- Build an app or website that teaches Honors Geometry to 9th grade students.
+- The first trial user will be my son, so design the experience for a real student who needs clear explanations, structure, and strong practice support.
+- The main goal is to explain concepts clearly and help the student succeed in class and on tests.
+
+Project documentation requirement
+- Create a file named: HG-Starter-Prompt.md
+- This file must act as the master build prompt and living project record.
+- Every time a new feature, workflow, content type, or structural decision is added to the app, update HG-Starter-Prompt.md so that someone else could use that file later to recreate or continue building the app.
+
+Content inputs
+- I will upload teacher-provided PDF files for each unit.
+- These files should be treated as important reference material that reflects what is being taught in school.
+- I may also upload textbook photos, textbook summary pages, or other supporting images.
+- Analyze all uploaded files and use them to design the tutorial experience for that unit.
+- In addition to the uploaded materials, use strong general knowledge and, when available, external educational resources to make the tutorial more complete and effective.
+
+Folder structure
+- Create a separate sub-folder for each unit.
+- Inside each unit folder, create an input sub-folder where all uploaded source materials for that unit will be stored.
+- Organize the project so that new units can be added easily in the future without restructuring the app.
+
+Example structure:
+HonorsGeometry/
+  HG-Starter-Prompt.md
+  app/
+  content/
+  units/
+    Unit-10-Circles/
+      input/
+      tutorial/
+      practice/
+      assessments/
+      summary/
+
+Tutorial experience requirements
+For each unit, create a tutorial that:
+- Explains concepts very clearly in a step-by-step way
+- Breaks down ideas into manageable learning steps
+- Lets the student move forward, go back, revisit any step, or skip to a specific step
+- Shows a clear map or outline of the tutorial flow so the student always knows where they are
+- Uses language that is age-appropriate for a 9th grade Honors Geometry student
+- Prioritizes conceptual understanding, not just memorization
+- Includes diagrams or visual explanations where helpful
+- Connects ideas clearly to classwork and likely test expectations
+
+Learning content requirements
+For each unit, include:
+- Concept lessons
+- Worked examples
+- Guided practice
+- Independent practice
+- Challenge problems
+- Short checks for understanding
+- Practice quizzes or mini-tests throughout the unit
+
+End-of-unit requirements
+At the end of each unit, create:
+- Three full unit practice tests
+- One easy-reference exam summary for quick review before a big test
+- The summary should be short, high value, and easy to scan on test day
+
+First unit to build
+- Start with Unit 10: Circles
+- I will provide teacher PDFs for this unit first
+- I will also provide textbook photos and a summary page for Unit 10
+- Use these materials to create the first full tutorial experience
+
+Product and technical requirements
+- Choose a strong tech stack and delivery format for this project
+- A website is likely a good choice, but choose the best option and explain why
+- The solution should be scalable, maintainable, and easy to extend with future units
+- The design should be simple, clean, student-friendly, and easy to navigate
+- Structure the content and code so more units can be added later with minimal effort
+
+Expected output from you
+Please do the following:
+1. Recommend the best tech stack and explain the choice
+2. Propose the project architecture and folder structure
+3. Create the initial HG-Starter-Prompt.md file
+4. Set up the structure for Unit 10: Circles
+5. Analyze the uploaded files for Unit 10
+6. Design the tutorial flow for Unit 10
+7. Create lesson content, examples, practice, challenge problems, and 3 full practice tests
+8. Create the before-exam summary for Unit 10
+9. Make sure the app supports future expansion to additional Honors Geometry units
+
+How to work
+- Think like both an education designer and a full-stack product builder.
+- Make thoughtful product, content, and architecture decisions.
+- Be explicit about assumptions.
+- Keep documentation current as you build.
+- Prefer clear structure, maintainable files, and reusable patterns.
+- When source materials are incomplete, fill the gaps with strong educational judgment while keeping the content aligned to 9th grade Honors Geometry.
+
+Important quality bar
+- Do deep analysis before designing the tutorial
+- Do not create shallow or generic explanations
+- The tutorial should be clear, structured, engaging, and genuinely useful for a student who is trying to learn and perform well in school
+- Favor clarity, strong pedagogy, and real learning outcomes over flashy design
+
+Work like both an education designer and a full-stack product builder. Make thoughtful decisions, document them clearly, and build this in a way that can grow into a complete Honors Geometry learning platform.
