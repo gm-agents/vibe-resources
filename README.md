@@ -14,6 +14,6 @@ A structured prompt set for creating a scalable Honors Geometry tutorial app for
 
 ## Top Free Resources
 
-Aishwarya Reganti's (https://www.linkedin.com/in/areganti/) - https://github.com/aishwaryanr/awesome-generative-ai-guide/tree/main
-Free lightning lessons from Maven - https://maven.com/free-lessons
-Claude Code Tutorial by Carl Vellotti - https://ccforeveryone.com/
+- Aishwarya Reganti's (https://www.linkedin.com/in/areganti/) - https://github.com/aishwaryanr/awesome-generative-ai-guide/tree/main
+- Free lightning lessons from Maven - https://maven.com/free-lessons
+- Claude Code Tutorial by Carl Vellotti - https://ccforeveryone.com/
