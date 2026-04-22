@@ -10,3 +10,10 @@ A structured prompt set for creating a scalable Honors Geometry tutorial app for
 - creates step-by-step lessons, worked examples, guided practice, challenge problems, and full unit tests
 - generates an exam review summary for each unit
 - maintains a living build document (`HG-Starter-Prompt.md`) so the project can be recreated or extended later
+
+
+## Top Free Resources
+
+Aishwarya Reganti's (https://www.linkedin.com/in/areganti/) - https://github.com/aishwaryanr/awesome-generative-ai-guide/tree/main
+Free lightning lessons from Maven - https://maven.com/free-lessons
+Claude Code Tutorial by Carl Vellotti - https://ccforeveryone.com/
