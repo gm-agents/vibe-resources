@@ -1,6 +1,6 @@
 # vibe-resources
 
-## Honors Geometry Tutorial App Prompt Set
+## Honors Geometry Tutorial App Prompt Set - Modifiable for your kid to teach them any subject for any grade
 
 A structured prompt set for creating a scalable Honors Geometry tutorial app for 9th grade students. This prompt is designed to help an AI tool generate a brand new project that:
 - builds a tutorial app or website for Honors Geometry
