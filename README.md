@@ -28,3 +28,4 @@ A few useful public resources for prompt engineering, AI workflows, and learning
 - [Aishwarya Reganti’s awesome GitHub repository and trainings](https://github.com/aishwaryanr/awesome-generative-ai-guide/tree/main)
 - [Free Lightning Lessons from Maven](https://maven.com/free-lessons)
 - [Claude Code Tutorial by Carl Vellotti](https://ccforeveryone.com/)
+- [Microsoft's Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners)
