@@ -1,4 +1,4 @@
-# vibe-resources
+# AI resources
 
 ![Repo Status](https://img.shields.io/badge/status-active-success)
 ![Prompt Types](https://img.shields.io/badge/prompts-multi--tool-blue)
