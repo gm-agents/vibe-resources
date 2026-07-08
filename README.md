@@ -23,7 +23,7 @@ This repository is built to make prompts easy to **reuse, adapt, version, and sh
 
 **How to use it**
 
-Point any AI surface at the file, or paste it into that tool's instructions:
+Point any AI tool at the file, or paste it into that tool's instructions:
 
 - **Claude Code:** add `@content-rules-generic.md` to your `CLAUDE.md` (global at `~/.claude/CLAUDE.md`, or per project).
 - **Claude.ai:** paste it into a custom Style, your personal preferences, or a Project's instructions.
