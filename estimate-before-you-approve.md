@@ -24,16 +24,16 @@ Copy everything between the two rules below.
 
 An **agent** is one model run with its own context (a subagent, a worker in a fleet, one iteration of a loop). A **cap** is a spending level at which you stop.
 
-1. **Ask before you act.** Before any task that will run more than a handful of agent calls, present the plan below and stop for approval. Mark the per-agent figure as measured on this codebase or as unmeasured; never present a guess as a measurement.
+1. **Ask before you act.** Before any task that will run more than a handful of agent calls, present the plan below and stop for approval. Mark the per-agent figure as measured on this codebase or as unmeasured; never present a guess as a measurement. If it is unmeasured, present a budget for the pilot alone, run it, and build the full estimate from what the pilot cost.
 2. **Estimate in agents, not tokens.** Total = agents × tokens per agent, summed across stages. The agent count is the number most likely to be wrong, so show how you arrived at it.
-3. **Propose a hard cap in the same message,** at 125 percent of the estimate. When spending reaches it, stop and report. Do not finish the stage first.
+3. **Propose a hard cap in the same message,** at 125 percent of the estimate. Before each stage, check that what remains under the cap covers that stage; if it does not, stop and report rather than run it partway. Where the tool can enforce a budget on a run, set the cap there too, so the stop does not depend on this instruction alone.
 4. **Name any stage whose width you cannot know yet.** If a stage's agent count depends on what an earlier stage produces (one verifier per finding, before the findings exist), give the cost as a range and cap the count. Never launch an unbounded stage on a fixed estimate.
 5. **Pilot one slice first.** Run one subtask through the full pipeline and report its agent count and tokens per agent against the estimate. Nothing else runs until that report has been approved.
 6. **Report cost after every stage,** in the format below, whether or not anyone asked.
 7. **When the estimate misses, cut agents, not quality.** Fewer agents in parallel, one verifier per batch instead of one per item, no duplicate passes. Refresh the estimate and pilot again before running the rest.
 8. **When the projection crosses the cap, stop and offer priced options:** raise the cap from a fresh estimate, hold it by cutting scope you name and price, or pause. Never raise the cap on your own or continue quietly.
 9. **When a limit interrupts a run, resume rather than restart.** Replay what the tool cached, run only what did not finish, and read the resumed output before trusting it. If the allowance ends with work left, finish it sequentially, without a fleet.
-10. **Keep the unit current.** After every run, record tokens per agent by kind of work so the next estimate starts from a measurement.
+10. **Keep the unit current, and keep it bounded.** After every run, record tokens per agent by kind of work so the next estimate starts from a measurement. In every agent's brief, name what it may read and how far it may search. An agent told to check everything reads everything, and the per-agent figure only holds when the brief limits it.
 
 ### The plan to present
 
@@ -41,7 +41,7 @@ An **agent** is one model run with its own context (a subagent, a worker in a fl
 Budget for:        <task>
 Stages:            <stage 1> → <stage 2> → <stage 3>
 Agents per stage:  <n1> / <n2> / <"depends on stage 2 output; capped at N">
-Tokens per agent:  ~<x>k (measured on this repo, <date>)  or  unmeasured
+Tokens per agent:  ~<x>k (measured on this repo, <date>)  or  unmeasured: pilot first
 Estimate:          ~<total> tokens
 Hard cap:          <1.25 × total> tokens, a stop, not a target
 Pilot:             <one slice> runs first; the rest waits for its cost report
@@ -68,6 +68,7 @@ Next:              <what runs next, or "stopping: cap reached", with options>
 - Read the pilot report before anything else runs, and every cost report after that. The reason for the gap is the part that teaches you something.
 - When the projection crosses the cap, decide from the options. Raising it is a fine decision when the extra work is worth more than the margin; the point is that you make it with a price in front of you.
 - Measure your own tokens per agent: one run's total divided by its agent count. Ours sat between about 70,000 and 90,000 for text-audit agents in September 2026; yours will differ, which is why you measure rather than borrow it.
+- If your tool meters in requests rather than tokens (Cursor, Copilot, Windsurf), keep the routine and change the unit to requests per agent or minutes per agent, whichever its usage page reports. The cap is then something you verify on that page after each stage, because the agent cannot read it from inside the tool.
 
 ## Sources
 
